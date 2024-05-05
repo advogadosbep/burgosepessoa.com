@@ -29,7 +29,7 @@ function Header() {
                 </div>
             </div>
             <div className='flex items-center justify-between px-40'>
-                <img className='h-20' src={logo} alt="logo" />
+                <img className='h-20 hover:cursor-pointer' src={logo} alt="logo" />
                 <ul className='flex items-center justify-center gap-2 text-gray-100 h-10'>
                     <li><Button variant="link">Sobre</Button></li>
                     <li><Button variant="link">Atuação</Button></li>
@@ -37,6 +37,12 @@ function Header() {
                     <li><Button variant="link">Casos</Button></li>
                     <li><Button variant="preOutline">Consultoria</Button></li>
                 </ul>
+            </div>
+            <div className='flex flex-col items-between justify-center h-full px-40 w-1/2 gap-4'>
+                <p className='text-gray-100 font-bold text-6xl'>ONDE A EXPERIÊNCIA<br/> CONTA MAIS FORTE</p>
+                <p className='text-gray-100'>Com nossa experiência e conhecimento, temos em nossa missão é
+                 proporcionar segurança jurídica eficaz ao patrimônio de nossos clientes.</p>
+                 <Button className='w-48' variant="preOutline">Agende uma Reunião</Button>
             </div>
         </div>
     )
