@@ -14,9 +14,9 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
         outline:
-          "border text-yellow-600 ease-in-out duration-200 border-yellow-600 shadow-sm hover:bg-yellow-600 hover:text-accent-foreground",
+          "border text-gray-100 ease-in-out font-bold duration-200 border-yellow-500 shadow-sm hover:bg-yellow-500 hover:text-accent-foreground",
         preOutline:
-          "border border-yellow-600 ease-in-out font-bold duration-200 text-accent-foreground bg-yellow-600 shadow-sm hover:bg-transparent hover:text-gray-100",
+          "border border-yellow-500 ease-in-out font-bold duration-200 text-accent-foreground bg-yellow-500 shadow-sm hover:bg-transparent hover:text-gray-100",
         secondary:
           "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
         ghost: "hover:bg-gray-800",
