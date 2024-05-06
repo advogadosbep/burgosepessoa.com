@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button"
 function About() {
     return (
         <div
-            className='h-full px-5 md:px-40 py-5 md:py-20'
+            className='h-full px-5 md:px-80 py-5 md:py-20'
             style={{
                 background: `url(${ textura })`,
-                backgroundPosition: "left",
+                backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment: "fixed",
@@ -33,7 +33,7 @@ function About() {
                         <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
                     />Sobre Nós</div>
                    <h2 className='text-lg font-bold text-gray-100'>Burgo & Pessoa Advogados</h2>
-                   <p className='text-gray-100 font-light md:w-2/3'>Nascemos no Recife e expandimos nossa atuação a diversas localidades do Nordeste, com escritórios parceiros também em Porto Alegre,
+                   <p className='text-gray-100 font-light'>Nascemos no Recife e expandimos nossa atuação a diversas localidades do Nordeste, com escritórios parceiros também em Porto Alegre,
                     Brasília e São Paulo. Crescemos da especialização técnica de nossa equipe, qualidade no atendimento e cultura organizacional. Nossa excelência
                     é a segurança jurídica de nossos clientes.
                    </p>
@@ -43,7 +43,7 @@ function About() {
                         <h2 className='font-semibold text-gray-100 mt-4'>Breno Pessoa Marques da Silva</h2>
                         <p className='text-sm text-gray-100'>- Advogado Civil, Trabalhista e Criminal</p>
                    </div>
-                   <Button variant="outline"><WhatsappLogo size={16} weight="bold" />&nbsp;Entre em Contato</Button>
+                   <Button variant="outline"><WhatsappLogo size={16} />&nbsp;Entre em Contato</Button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import Header from './page/Header';
 import About from './page/About';
 import Atuacao from './page/Atuacao';
+import Form from './page/Form';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header />
       <About />
       <Atuacao />
+      <Form />
     </div>
   )
 }

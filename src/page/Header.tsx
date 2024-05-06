@@ -62,7 +62,7 @@ function Header() {
                         <p>(81) 9 9676-4688</p>
                     </div>
                     <div className='flex text-gray-100 text-sm font-light items-center gap-1'>
-                        <MapPin size={16} weight="light" className='text-yellow5600'/>
+                        <MapPin size={16} weight="light" className='text-yellow-500'/>
                         <p>Av Domingos Ferreira, 401 - Boa Viagem</p>
                     </div>
                 </div>
@@ -89,8 +89,8 @@ function Header() {
                     <li><Button variant="link">Sobre</Button></li>
                     <li><Button variant="link">Atuação</Button></li>
                     <li><Button variant="link">Serviços</Button></li>
-                    <li><Button variant="link">Casos</Button></li>
-                    <li><Button variant="outline">Consultoria</Button></li>
+                    <li><Button variant="link">Clientes</Button></li>
+                    <li><Button variant="outline">Solicitar Orçamento</Button></li>
                 </ul>
                 <button className={` ${mobileNav ? 'block' : 'hidden'} w-screen h-screen absolute z-10 top-0 left-0 bg-gray-900 opacity-50`} onClick={() => setMobileNav(false)}/>
             </div>
