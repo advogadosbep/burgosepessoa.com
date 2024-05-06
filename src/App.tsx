@@ -8,16 +8,10 @@ import Footer from './sections/Footer';
 import Rodape from './sections/Rodape';
 import Termos from './components/Termos';
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
   const [viewTerms, setViewTerms] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setViewTerms(true)
-    }, 3000)
-  }, [])
 
   const close = () => {
     setViewTerms(false)

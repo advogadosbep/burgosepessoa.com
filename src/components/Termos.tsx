@@ -2,7 +2,7 @@ import { XCircle  } from "@phosphor-icons/react";
 
 function Termos({ close }: any) {
     return (
-        <div className="fixed mx-5 top-28 h-96 md:left-1/4 md:right-2/4 bg-slate-100 py-6 px-4 md:w-2/4 z-20 rounded-lg">
+        <div className="fixed shadow-2xl shadow-gray-500 mx-5 top-28 h-96 md:left-1/4 md:right-2/4 bg-slate-100 py-6 px-4 md:w-2/4 z-20 rounded-lg">
             <div className="flex w-full justify-between">
                 <h2 className="font-bold text-center text-2xl text-gray-900">Termo de Privacidade</h2>
                 <XCircle size={32} className="cursor-pointer hover:text-yellow-600" onClick={() => close()}/>
