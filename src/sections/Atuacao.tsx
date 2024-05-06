@@ -10,7 +10,8 @@ const buttns = 'hidden group-hover:block absolute bottom-2 md:bottom-5';
 function Atuacao() {
     return (
         <div
-            className='flex flex-col md:items-center gap-10 h-full px-5 md:px-40 py-5 md:py-20'
+            id='atuacao'
+            className='flex shadow-2xl flex-col md:items-center gap-10 h-full px-5 md:px-40 py-5 md:py-20'
             style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
@@ -19,7 +20,7 @@ function Atuacao() {
                 backgroundAttachment: "fixed",
             }}
         >
-            <div className='relative w-28 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
+            <div className='relative mt-5 w-28 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
                 <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
             />Atuação</div>
             <div className="grid h-full grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-4">
@@ -72,7 +73,7 @@ function Atuacao() {
                     <p className={`${descriptions}`}>Trabalhamos com suporte legal para estruturar, proteger e resolver questões familiares de forma colaborativa e construtiva desde separação judicial, divórcio, guarda de crianças, pensão alimentícia, adoção e mediação familiar.</p>
                     <Button className={`${buttns}`} variant="outline">Saiba Mais</Button>
                 </div>
-                <div className={`${cards}`}>
+                <div className={`${cards}`} id='clientes'>
                     <HandCoins className="text-yellow-500" size={32} weight="fill" />
                     <h2 className={`${titles}`}>DIREITO DAS SUCESSÕES</h2>
                     <p className={`${descriptions}`}>

@@ -34,7 +34,7 @@ function Form() {
         }));
     }
 
-    const bttnSubmit = (e) => {
+    const bttnSubmit = (e: any) => {
         e.preventDefault();
         console.log('Enviado')
         /*const {name, email, mensagem } = formInputs;
@@ -58,7 +58,8 @@ function Form() {
 
     return (
         <div
-            className='h-full px-5 md:px-80 py-8 md:py-20'
+            id='form'
+            className='h-full px-5 md:px-80 py-8 md:py-40'
             style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
@@ -68,7 +69,7 @@ function Form() {
             }}
         >
             <form className='text-gray-100 flex flex-col items-center gap-4 md:gap-8'>
-                <h2 className='font-bold text-lg pb-5 md:text-2xl'>Solicite um Orçamento</h2>
+                <h2 className='font-bold text-lg pb-5 md:text-2xl text-gray-100'>Consulte Gratuitamente</h2>
                 <div className='flex flex-col md:flex-row gap-4 md:gap-8 w-full'>
                     <Input
                         type="name"
@@ -99,7 +100,7 @@ function Form() {
                     onClick={ bttnSubmit }
                     type="submit"
                     disabled={ isDisabled }
-                >Enviar Mensagem&nbsp;<PaperPlaneRight size={14} /></Button>
+                >Enviar Mensagem&nbsp;<PaperPlaneRight size={12} /></Button>
             </form>
         </div>
     )

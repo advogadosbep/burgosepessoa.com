@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 function About() {
     return (
         <div
+            id='sobre'
             className='h-full px-5 md:px-80 py-5 md:py-20'
             style={{
                 background: `url(${ textura })`,
