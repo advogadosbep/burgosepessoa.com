@@ -29,7 +29,7 @@ function About() {
                     />
                 </div>
                 <div className='md:w-2/3 h-full flex flex-col items-start gap-6'>
-                    <div className='relative px-4 py-1 bg-yellow-500 font-bold text-gray-900'>
+                    <div className='relative px-4 py-1 w-28 bg-yellow-500 font-bold text-gray-900'>
                         <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
                     />Sobre Nós</div>
                    <h2 className='text-lg font-bold text-gray-100'>Burgo & Pessoa Advogados</h2>
