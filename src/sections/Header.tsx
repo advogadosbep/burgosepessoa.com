@@ -66,10 +66,12 @@ function Header() {
                 backgroundPosition: "right",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                height: `70vh`,
+                backgroundPositionX: "50%",
+                backgroundPositionY: "50%",
+
             }}
-            className="relative w-full flex flex-col shadow-2xl">
-            <div className='hidden lg:flex h-10 bg-blue-950 justify-between items-center px-5 md:px-40'>
+            className="relative w-full h-80 md:h-[80vh] flex flex-col shadow-2xl">
+            <div className='hidden lg:flex h-10 bg-gray-900 justify-between items-center px-5 md:px-40'>
                 <div className='flex gap-4'>
                     <div className='flex text-gray-100 text-sm font-light items-center gap-1'>
                         <WhatsappLogo size={16} weight="light" className='text-yellow-500'/>

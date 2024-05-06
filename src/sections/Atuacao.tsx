@@ -1,6 +1,7 @@
 import { HardHat, CaretDown, Users, Money, BriefcaseMetal, HashStraight, CurrencyDollar, HouseLine, HandCoins  } from '@phosphor-icons/react';
 import { Button } from "@/components/ui/button"
 import textura from '../asserts/textura3.png';
+import useWindowSize from '@/hooks/useWindowSize';
 
 const cards = 'group shadow-2xl relative hover:cursor-pointer sm:aspect-square flex flex-col justify-start items-center h-40 sm:h-auto gap-2 p-4 md:p-8 border border-yellow-500 bg-gray-900 ease-in-out duration-300 hover:bg-blue-950';
 const titles = 'font-semibold text-yellow-500 md:text-lg text-center';
@@ -8,6 +9,7 @@ const descriptions = 'hidden sm:block text-center text-xs md:text-sm font-light 
 const buttns = 'hidden group-hover:block absolute bottom-2 md:bottom-5';
 
 function Atuacao() {
+    const size = useWindowSize();
     return (
         <div
             id='atuacao'
@@ -17,10 +19,10 @@ function Atuacao() {
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
+                backgroundAttachment:  `${size.width > 768 && 'fixed'}`,
             }}
         >
-            <div className='relative mt-5 w-28 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
+            <div className='relative mt-5 w-32 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
                 <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
             />Atuação</div>
             <div className="grid h-full grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-1 md:gap-4">

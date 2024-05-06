@@ -5,7 +5,7 @@ import { WhatsappLogo, FacebookLogo, YoutubeLogo, InstagramLogo, LinkedinLogo, M
 function Footer({ open }: any) {
     return (
         <div className='bg-gray-700 flex flex-col items-center px-5 py-10'>
-            <img className='h-36' src={logo} alt="logo-burgoepessoa" />
+            <img className='h-36' src={logo} alt="logo-burgosepessoa" />
             <div className='flex items-center gap-1'>
                 <FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
                 <InstagramLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
@@ -23,7 +23,7 @@ function Footer({ open }: any) {
                         <p>R. Padre Carapuceiro, 858 - Boa Viagem, Recife</p>
                     </div>
                 </div>
-                <p className='text-gray-100 font-normal text-center'>advogados@burgoepessoa.com</p>
+                <p className='text-gray-100 font-normal text-center'>advogados@burgosepessoa.com</p>
                 <p className='text-gray-100 font-semibold text-center py-2 text-sm'>
                     Atendimento ao público de Segunda a Sexta, das 09h às 18h.<br />
                     Horários alternativos são possíveis, desde que previamente agendados.

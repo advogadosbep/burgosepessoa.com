@@ -14,7 +14,7 @@ function Office() {
                 backgroundRepeat: "no-repeat",
             }}
         >
-            <div className='relative mt-5 w-28 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
+            <div className='relative mt-5 w-32 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
                 <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
             />Escritório</div>
             <div className="flex flex-col md:flex-row gap-4 text-gray-100">

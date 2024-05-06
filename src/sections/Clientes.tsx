@@ -32,8 +32,8 @@ function ClientesNew() {
 
   return (
     <div className="h-56 bg-blue-950 pt-2">
-      <div className="w-full flex justify-center">
-        <div className="relative w-28 px-4 py-1 mt-8 text-center bg-yellow-500 font-bold text-gray-900">
+      <div className="w-full px-5 flex md:justify-center">
+        <div className="relative w-32 px-4 py-1 mt-8 text-center bg-yellow-500 font-bold text-gray-900">
           <CaretDown className="absolute -bottom-3 left-2 text-yellow-500" size={20} weight="fill" />
           Clientes
         </div>

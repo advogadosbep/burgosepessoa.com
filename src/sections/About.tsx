@@ -2,8 +2,10 @@ import { CaretDown, WhatsappLogo } from '@phosphor-icons/react';
 import sobre from '../asserts/sobre.png';
 import textura from '../asserts/textura.png';
 import { Button } from "@/components/ui/button"
+import useWindowSize from '@/hooks/useWindowSize';
 
 function About() {
+    const size = useWindowSize();
     return (
         <div
             id='sobre'
@@ -12,8 +14,8 @@ function About() {
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
+                backgroundRepeat: "repeat",
+                backgroundAttachment: `${size.width > 768 && 'fixed'}`,
             }}
         >
             <h1 className='opacity-0'>Advogados Recife Pernambuco Advocacia Nordeste Processos jurídico Consultoria</h1>
@@ -30,10 +32,10 @@ function About() {
                     />
                 </div>
                 <div className='md:w-2/3 h-full flex flex-col items-start gap-6'>
-                    <div className='relative px-4 py-1 w-28 bg-yellow-500 font-bold text-gray-900'>
+                    <div className='relative px-4 py-1 w-32 bg-yellow-500 font-bold text-gray-900'>
                         <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
                     />Sobre Nós</div>
-                   <h2 className='text-lg font-bold text-gray-100'>Burgo & Pessoa Advogados</h2>
+                   <h2 className='text-lg font-bold text-gray-100'>Burgos & Pessoa Advogados</h2>
                    <p className='text-gray-100 font-light'>Nascemos no Recife e expandimos nossa atuação a diversas localidades do Nordeste, com escritórios parceiros também em Porto Alegre,
                     Brasília e São Paulo. Crescemos da especialização técnica de nossa equipe, qualidade no atendimento e cultura organizacional. Nossa excelência
                     é a segurança jurídica de nossos clientes.
