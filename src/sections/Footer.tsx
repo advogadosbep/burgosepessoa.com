@@ -4,7 +4,7 @@ import { WhatsappLogo, FacebookLogo, YoutubeLogo, InstagramLogo, LinkedinLogo, M
 
 function Footer({ open }: any) {
     return (
-        <div className='bg-gray-700 flex flex-col items-center px-5 py-10'>
+        <div className='bg-gray-900 flex flex-col items-center px-5 py-10'>
             <img className='h-36' src={logo} alt="logo-burgosepessoa" />
             <div className='flex items-center gap-1'>
                 <FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>

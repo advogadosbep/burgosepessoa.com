@@ -28,8 +28,8 @@ function App() {
       }
       <About />
       <Atuacao />
-      <ClientesNew />
       <Form />
+      <ClientesNew />
       <Office />
       <Footer open={open}/>
       <Rodape />

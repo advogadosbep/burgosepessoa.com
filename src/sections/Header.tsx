@@ -89,7 +89,7 @@ function Header() {
                     <LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
                 </div>
             </div>
-            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-900 px-5 py-2 top-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
+            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-950 px-5 py-2 top-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
                 <img className='h-20 hover:cursor-pointer' src={logo} alt="logo" onClick={() => scrollToSection(homeRef)}/>
                 <List
                     size={32}
@@ -107,7 +107,7 @@ function Header() {
                     <li><Button variant="link" onClick={() => scrollToSection(atuacaoRef)}>Atuação</Button></li>
                     <li><Button variant="link" onClick={() => scrollToSection(clientesRef)}>Clientes</Button></li>
                     <li><Button variant="link" onClick={() => scrollToSection(officeRef)}>Escritório</Button></li>
-                    <li><Button variant="outline" onClick={() => scrollToSection(formRef)}>Solicitar Orçamento</Button></li>
+                    <li><Button variant="outline" onClick={() => scrollToSection(formRef)}>Consulte Gratuitamente</Button></li>
                 </ul>
                 <button className={` ${mobileNav ? 'block' : 'hidden'} w-screen h-screen absolute z-10 top-0 left-0 bg-gray-900 opacity-50`} onClick={() => setMobileNav(false)}/>
             </div>

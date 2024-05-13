@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import textura from '../asserts/textura2.png';
+import textura from '../asserts/textura.png';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";

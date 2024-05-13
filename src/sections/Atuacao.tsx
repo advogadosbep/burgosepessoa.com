@@ -3,24 +3,23 @@ import { Button } from "@/components/ui/button"
 import textura from '../asserts/textura3.png';
 import useWindowSize from '@/hooks/useWindowSize';
 
-const cards = 'group shadow-2xl relative hover:cursor-pointer sm:aspect-square flex flex-col justify-start items-center h-40 sm:h-auto gap-2 p-4 md:p-8 border border-yellow-500 bg-gray-900 ease-in-out duration-300 hover:bg-blue-950';
+const cards = 'group shadow-2xl relative hover:cursor-pointer sm:aspect-square flex flex-col justify-start items-center h-40 sm:h-auto gap-2 p-4 md:p-4 border border-yellow-500 bg-gray-900 ease-in-out duration-300 hover:bg-blue-950';
 const titles = 'font-semibold text-yellow-500 md:text-lg text-center';
 const descriptions = 'hidden sm:block text-center text-xs md:text-sm font-light text-gray-300 text-pretty';
 const buttns = 'hidden group-hover:block absolute bottom-2 md:bottom-5';
 
 function Atuacao() {
-    const size = useWindowSize();
     return (
         <div
             id='atuacao'
-            className='flex shadow-2xl flex-col md:items-center gap-10 h-full px-5 md:px-40 py-5 md:py-20'
-            style={{
+            className='flex shadow-2xl flex-col md:items-center gap-10 h-full px-5 md:px-40 py-5 md:py-20 bg-gray-900'
+            /*style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
                 backgroundRepeat: "no-repeat",
                 backgroundAttachment:  `${size.width > 768 && 'fixed'}`,
-            }}
+            }}*/
         >
             <div className='relative mt-5 w-32 px-4 py-1 text-center bg-yellow-500 font-bold text-gray-900'>
                 <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
@@ -75,7 +74,7 @@ function Atuacao() {
                     <p className={`${descriptions}`}>Trabalhamos com suporte legal para estruturar, proteger e resolver questões familiares de forma colaborativa e construtiva desde separação judicial, divórcio, guarda de crianças, pensão alimentícia, adoção e mediação familiar.</p>
                     <Button className={`${buttns}`} variant="outline">Saiba Mais</Button>
                 </div>
-                <div className={`${cards}`} id='clientes'>
+                <div className={`${cards}`}>
                     <HandCoins className="text-yellow-500" size={32} weight="fill" />
                     <h2 className={`${titles}`}>DIREITO DAS SUCESSÕES</h2>
                     <p className={`${descriptions}`}>
