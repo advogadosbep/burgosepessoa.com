@@ -21,7 +21,7 @@ function App() {
   }
 
   return (
-    <div className='relative w-screen overflow-x-hidden scroll-smooth'>
+    <div className='w-fit overflow-x-hidden scroll-smooth'>
       <Header />
       {
         viewTerms && <Termos close={close} />
@@ -29,7 +29,6 @@ function App() {
       <About />
       <Atuacao />
       <Form />
-      <ClientesNew />
       <Office />
       <Footer open={open}/>
       <Rodape />

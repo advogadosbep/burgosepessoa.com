@@ -7,10 +7,10 @@ function Footer({ open }: any) {
         <div className='bg-gray-900 flex flex-col items-center px-5 py-10'>
             <img className='h-36' src={logo} alt="logo-burgosepessoa" />
             <div className='flex items-center gap-1'>
-                <FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                <InstagramLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                <YoutubeLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                <LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
+            <a target='blank' href="https://m.facebook.com/burgosepessoaadvogados"><FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href="https://www.instagram.com/burgos_pessoa/"><InstagramLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href=""><YoutubeLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href="https://www.linkedin.com/in/burgos-e-pessoa-advogados-3229a6147/?originalSubdomain=br"><LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
             </div>
             <div className='flex flex-col items-center'>
                 <div className='flex flex-col items-center'>

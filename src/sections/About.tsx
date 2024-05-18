@@ -9,7 +9,7 @@ function About() {
     return (
         <div
             id='sobre'
-            className='h-full px-5 md:px-80 py-5 md:py-20'
+            className='h-full px-5 md:px-40 py-5 md:py-20'
             style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
@@ -19,10 +19,10 @@ function About() {
             }}
         >
             <h1 className='opacity-0'>Advogados Recife Pernambuco Advocacia Nordeste Processos jurídico Consultoria</h1>
-            <div className='h-full flex flex-col md:flex-row justify-between items-center gap-8'>
-                <div className='w-full md:w-1/3 flex justify-center'>
+            <div className='container h-full flex flex-col lg:flex-row justify-between items-center gap-8'>
+                <div className='w-full lg:w-1/3 flex justify-center'>
                     <div
-                        className='w-full h-96 border-2 border-yellow-500'
+                        className='w-full h-60 md:h-96 border-2 border-yellow-500'
                         style={{
                             background: `url(${ sobre })`,
                             backgroundPosition: "center",
@@ -31,7 +31,7 @@ function About() {
                         }}
                     />
                 </div>
-                <div className='md:w-2/3 h-full flex flex-col items-start gap-6'>
+                <div className='lg:w-2/3 h-full flex flex-col items-start gap-6'>
                     <div className='relative px-4 py-1 w-32 bg-yellow-500 font-bold text-gray-900'>
                         <CaretDown className='absolute -bottom-3 left-2 text-yellow-500' size={20} weight="fill"
                     />Sobre Nós</div>
@@ -46,7 +46,7 @@ function About() {
                         <h2 className='font-semibold text-gray-100 mt-4'>Breno Pessoa Marques da Silva</h2>
                         <p className='text-sm text-gray-100'>- Advogado Civil, Trabalhista e Criminal</p>
                    </div>
-                   <Button variant="outline"><WhatsappLogo size={16} />&nbsp;Entre em Contato</Button>
+                   <a target='blank' href="https://wa.me/558196061149"><Button variant="outline"><WhatsappLogo size={16} />&nbsp;Entre em Contato</Button></a>
                 </div>
             </div>
         </div>

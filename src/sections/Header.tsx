@@ -2,7 +2,7 @@ import headerBg from '../asserts/header.png';
 import logo from '../asserts/logo-branca.png';
 import useWindowSize from '../hooks/useWindowSize';
 import useWindowScroll from '../hooks/useWindowScroll';
-import { WhatsappLogo, MapPin, FacebookLogo, YoutubeLogo, InstagramLogo, LinkedinLogo, List, X, CalendarDots  } from "@phosphor-icons/react";
+import { Phone, WhatsappLogo, MapPin, FacebookLogo, YoutubeLogo, InstagramLogo, LinkedinLogo, List, X  } from "@phosphor-icons/react";
 import { Button } from "@/components/ui/button"
 import { useState, useRef, useEffect } from 'react';
 import { gsap } from 'gsap';
@@ -18,7 +18,6 @@ function Header() {
     const atuacaoRef = document.getElementById('atuacao');
     const formRef = document.getElementById('form');
     const officeRef = document.getElementById('office');
-    const clientesRef = document.getElementById('clientes');
     
     const scrollToSection = (section: any) => {
         if (section) {
@@ -74,8 +73,8 @@ function Header() {
             <div className='hidden lg:flex h-10 bg-gray-900 justify-between items-center px-5 md:px-40'>
                 <div className='flex gap-4'>
                     <div className='flex text-gray-100 text-sm font-light items-center gap-1'>
-                        <WhatsappLogo size={16} weight="light" className='text-yellow-500'/>
-                        <p>(81) 9 9606-1149</p>
+                        <Phone size={16} weight="light" className='text-yellow-500'/>
+                        <p>(81) 3059-4374</p>
                     </div>
                     <div className='flex text-gray-100 text-sm font-light items-center gap-1'>
                         <MapPin size={16} weight="light" className='text-yellow-500'/>
@@ -83,13 +82,13 @@ function Header() {
                     </div>
                 </div>
                 <div className='flex items-center gap-1'>
-                    <FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                    <InstagramLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                    <YoutubeLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
-                    <LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/>
+                    <a target='blank' href="https://m.facebook.com/burgosepessoaadvogados"><FacebookLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href="https://www.instagram.com/burgos_pessoa/"><InstagramLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href=""><YoutubeLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
+                    <a target='blank' href="https://www.linkedin.com/in/burgos-e-pessoa-advogados-3229a6147/?originalSubdomain=br"><LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
                 </div>
             </div>
-            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-950 px-5 py-2 top-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
+            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-950 px-5 py-2 top-0 left-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
                 <img className='h-20 hover:cursor-pointer' src={logo} alt="logo" onClick={() => scrollToSection(homeRef)}/>
                 <List
                     size={32}
@@ -105,7 +104,6 @@ function Header() {
                     <img className='md:hidden h-20 mt-8' src={logo} alt="logo" />
                     <li><Button variant="link" onClick={() => scrollToSection(sobreRef)}>Sobre</Button></li>
                     <li><Button variant="link" onClick={() => scrollToSection(atuacaoRef)}>Atuação</Button></li>
-                    <li><Button variant="link" onClick={() => scrollToSection(clientesRef)}>Clientes</Button></li>
                     <li><Button variant="link" onClick={() => scrollToSection(officeRef)}>Escritório</Button></li>
                     <li><Button variant="outline" onClick={() => scrollToSection(formRef)}>Consulte Gratuitamente</Button></li>
                 </ul>
@@ -115,7 +113,7 @@ function Header() {
                 <p ref={titleRef} className='text-gray-100 font-bold text-2xl md:text-4xl lg:text-6xl'>ONDE A EXPERIÊNCIA<br/> CONTA MAIS FORTE!</p>
                 <p ref={subTitleRef} className='text-gray-100 font-light text-xs md:text-sm lg:text-base -mt-2'>Nossa missão é
                  proporcionar segurança jurídica eficaz ao patrimônio de nossos clientes.<br/> Que nossa causa seja sempre justa!</p>
-                 <Button ref={areaBtnRef} className='w-52' variant="preOutline"><CalendarDots size={20} />&nbsp; Agende uma Reunião</Button>
+                 <a target='blank' href="https://wa.me/558196061149"><Button ref={areaBtnRef} className='w-52' variant="preOutline"><WhatsappLogo size={20} />&nbsp; Agende uma Reunião</Button></a>
             </div>
         </div>
     )
