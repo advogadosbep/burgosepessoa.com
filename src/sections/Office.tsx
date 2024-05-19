@@ -26,8 +26,10 @@ function Office() {
                         <p>Nosso trabalho nos desafia
                         permanentemente a oferecer soluções inovadoras, com agilidade e segurança. Por isso, investimos permanentemente no desenvolvimento e atualização
                         de nossos profissionais.</p>
-   
-                        <Scales size={32} weight="fill" className="text-yellow-500"/>
+
+                        <div className="flex justify-center">
+                            <Scales size={32} weight="fill" className="text-yellow-500"/>
+                        </div>
                   
                         <p>Desenvolvemos inteligência jurídica para ajudar nossos clientes a viabilizar negócios e ir mais longe. Nesse processo, seguimos crescendo com eles.</p>
                  

@@ -23,6 +23,7 @@ function Header() {
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
+        setMobileNav(false)
     };
 
     const size = useWindowSize();
@@ -107,13 +108,16 @@ function Header() {
                     <li><Button variant="link" onClick={() => scrollToSection(officeRef)}>Escritório</Button></li>
                     <li><Button variant="outline" onClick={() => scrollToSection(formRef)}>Consulte Gratuitamente</Button></li>
                 </ul>
-                <button className={` ${mobileNav ? 'block' : 'hidden'} w-screen h-screen absolute z-10 top-0 left-0 bg-gray-900 opacity-50`} onClick={() => setMobileNav(false)}/>
+                <button className={` ${mobileNav ? 'block' : 'hidden'} w-screen h-screen absolute z-10 top-0 left-0 bg-gray-900 opacity-90`} onClick={() => setMobileNav(false)}/>
             </div>
             <div className='flex flex-col items-between justify-center h-full px-5 md:pl-40 gap-4 md:gap-8'>
                 <p ref={titleRef} className='text-gray-100 font-bold text-2xl md:text-4xl lg:text-6xl'>ONDE A EXPERIÊNCIA<br/> CONTA MAIS FORTE!</p>
-                <p ref={subTitleRef} className='text-gray-100 font-light text-xs md:text-sm lg:text-base -mt-2'>Nossa missão é
-                 proporcionar segurança jurídica eficaz ao patrimônio de nossos clientes.<br/> Que nossa causa seja sempre justa!</p>
-                 <a target='blank' href="https://wa.me/558196061149"><Button ref={areaBtnRef} className='w-52' variant="preOutline"><WhatsappLogo size={20} />&nbsp; Agende uma Reunião</Button></a>
+                <div ref={subTitleRef} className='text-gray-100 font-light text-xs md:text-sm lg:text-base -mt-2 text-balance'>
+                    <p>Nossa missão é
+                    proporcionar segurança jurídica eficaz ao patrimônio de nossos clientes.</p>
+                    <p>Que nossa causa seja sempre justa!</p>
+                </div>
+                <a target='blank' href="https://wa.me/558196061149"><Button ref={areaBtnRef} className='w-52' variant="preOutline"><WhatsappLogo size={20} />&nbsp; Agende uma Reunião</Button></a>
             </div>
         </div>
     )
