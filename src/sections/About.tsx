@@ -9,7 +9,7 @@ function About() {
     return (
         <div
             id='sobre'
-            className='h-full px-5 md:px-40 py-5 md:py-20'
+            className='h-full px-5 md:px-40 py-5 md:py-20 bg-blue-950'
             style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
