@@ -3,7 +3,6 @@ import About from './sections/About';
 import Atuacao from './sections/Atuacao';
 import Form from './sections/Form';
 import Office from './sections/Office';
-import ClientesNew from './sections/Clientes';
 import Footer from './sections/Footer';
 import Rodape from './sections/Rodape';
 import Termos from './components/Termos';
