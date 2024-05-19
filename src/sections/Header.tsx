@@ -89,7 +89,7 @@ function Header() {
                     <a target='blank' href="https://www.linkedin.com/in/burgos-e-pessoa-advogados-3229a6147/?originalSubdomain=br"><LinkedinLogo size={20} weight="fill" className='text-yellow-500 ease-in-out duration-300 hover:cursor-pointer hover:text-gray-100'/></a>
                 </div>
             </div>
-            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-950 px-5 py-2 top-0 left-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
+            <div className={`${heigthEl > size.height * 0.2 ? 'fixed bg-gray-900 px-5 py-2 top-0 left-0 z-30' : ''} flex ease-in-out duration-300 w-full items-center justify-between px-5 md:px-40`}>
                 <img className='h-20 hover:cursor-pointer' src={logo} alt="logo" onClick={() => scrollToSection(homeRef)}/>
                 <List
                     size={32}

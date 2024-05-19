@@ -59,7 +59,7 @@ function Form() {
     return (
         <div
             id='form'
-            className='h-full px-5 md:px-80 py-8 md:py-40'
+            className='h-full px-5 md:px-80 py-8 md:py-40 bg-blue-950'
             style={{
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
