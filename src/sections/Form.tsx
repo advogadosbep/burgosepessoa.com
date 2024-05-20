@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import textura from '../asserts/textura.png';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { PaperPlaneRight } from '@phosphor-icons/react';
+import { PaperPlaneRight, CircleNotch } from '@phosphor-icons/react';
+import useWindowSize from '@/hooks/useWindowSize';
 
 function Form() {
+    const serviceId = import.meta.env.VITE_SERVICE_ID;
+    const templateId = import.meta.env.VITE_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+
+    const size = useWindowSize();
+
+    const [isLoading, setIsLoading] = useState(false);
     const [isDisabled, setDisable] = useState(true);
     const [formInputs, setform] = useState({
         name: '',
@@ -36,25 +45,29 @@ function Form() {
 
     const bttnSubmit = (e: any) => {
         e.preventDefault();
+        setIsLoading(true);  // Inicia o loading
         console.log('Enviado')
-        /*const {name, email, mensagem } = formInputs;
+        const {name, email, mensagem } = formInputs;
         const objParams = {
-          from_name: name,
+          name: name,
           email,
           mensagem
         }
-        emailjs.send('aaaaaaa', 'aaaaaaaaaaa', objParams, 'aaaaaaaaaa')
-        .then((response) => {
+        emailjs.send(serviceId, templateId, objParams, publicKey)
+        .then(() => {
           setform({
             name: '',
             email: '',
             mensagem: '',
           });
-          alert('mensagem enviada')
+          setIsLoading(false);  // Termina o loading
+          alert('mensagem enviada');
         }, (err) => {
-          console.log('erro no envio' + err)
-        })*/
-      }
+          setIsLoading(false);  // Termina o loading
+          console.log('erro no envio' + err);
+        });
+    }
+    
 
     return (
         <div
@@ -64,8 +77,8 @@ function Form() {
                 background: `url(${ textura })`,
                 backgroundPosition: "center",
                 backgroundSize: "cover",
-                backgroundRepeat: "no-repeat",
-                backgroundAttachment: "fixed",
+                backgroundRepeat: "repeat",
+                backgroundAttachment: `${size.width > 768 && 'fixed'}`,
             }}
         >
             <form className='text-gray-100 flex flex-col items-center gap-4 md:gap-8'>
@@ -100,7 +113,7 @@ function Form() {
                     onClick={ bttnSubmit }
                     type="submit"
                     disabled={ isDisabled }
-                >Enviar Mensagem&nbsp;<PaperPlaneRight size={12} /></Button>
+                >Enviar Mensagem&nbsp;{isLoading ? <CircleNotch className='animate-spin' size={12} /> : <PaperPlaneRight size={12} />}</Button>
             </form>
         </div>
     )
