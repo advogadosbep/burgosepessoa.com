@@ -1,6 +1,6 @@
 import { CaretDown, WhatsappLogo } from '@phosphor-icons/react';
 import sobre from '../asserts/sobre.png';
-import textura from '../asserts/textura.png';
+import textura from '../asserts/textura.webp';
 import { Button } from "@/components/ui/button"
 import useWindowSize from '@/hooks/useWindowSize';
 
