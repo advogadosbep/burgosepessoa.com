@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
-import textura from '../asserts/textura.png';
+import textura from '../asserts/textura.webp';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
