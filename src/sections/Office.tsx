@@ -42,7 +42,7 @@ function Office() {
                         </div>
                         <div className='flex flex-col md:flex-row text-blue-950 text-xs md:text-sm font-bold items-center gap-1 bg-yellow-500 py-2 px-4'>
                             <MapPin size={16} weight="bold" className='text-blue-950'/>
-                            <p className="text-center ld:text-left text-balance">R. Padre Carapuceiro, 858 - Boa Viagem, Recife</p>
+                            <p className="text-center ld:text-left text-balance">Rua Capitão Zuzinha, 22, Sala 507, Recife/PE</p>
                         </div>
                     </div>
                 </div>

@@ -79,7 +79,7 @@ function Header() {
                     </div>
                     <div className='flex text-gray-100 text-sm font-light items-center gap-1'>
                         <MapPin size={16} weight="light" className='text-yellow-500'/>
-                        <p>R. Padre Carapuceiro, 858 - Boa Viagem, Recife</p>
+                        <p>Rua Capitão Zuzinha, 22, Sala 507, Recife/PE</p>
                     </div>
                 </div>
                 <div className='flex items-center gap-1'>

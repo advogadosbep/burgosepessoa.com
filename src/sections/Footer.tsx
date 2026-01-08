@@ -20,10 +20,11 @@ function Footer({ open }: any) {
                     </div>
                     <div className='flex text-gray-100 text-xs md:text-sm font-semibold items-center gap-1'>
                         <MapPin size={16} weight="bold" className='text-yellow-500'/>
-                        <p>R. Padre Carapuceiro, 858 - Boa Viagem, Recife</p>
+                        <p>Rua Capitão Zuzinha, 22, Sala 507<br/>CEP: 51.030-420, Recife/PE</p>
                     </div>
                 </div>
                 <p className='text-yellow-500 font-semibold text-center'>advogados@burgosepessoa.com</p>
+                <p className='text-gray-100 text-xs md:text-sm font-semibold'>CNPJ: 28.139.553/0001-49</p>
                 <p className='text-gray-100 font-semibold text-center py-2 text-xs md:text-sm text-pretty'>
                     Atendimento de Segunda a Sexta, das 09h às 18h.<br />
                     Horários alternativos são possíveis, desde que previamente agendados.
